@@ -30,6 +30,18 @@
     </div>
   </div>
   <div class="article-content"><%- page.content %></div>
+  <!-- 评论区容器 -->
+  <div id="tcomment"></div>
+  <!-- 加载 Twikoo JS -->
+  <script src="https://cdn.staticfile.org/twikoo/1.6.4/twikoo.all.min.js"></script>
+  <script>
+    twikoo.init({
+      envId: "https://arcmeteor-blog.netlify.app/.netlify/functions/twikoo",  // 或 Docker 服务的 HTTPS 地址
+      el: "#tcomment",
+      path: window.location.pathname,
+      visitor: true  // 开启访客统计
+    });
+  </script>
   <% 
     const categories = page.categories.data
     const tags = page.tags.data

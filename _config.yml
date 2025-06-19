@@ -8,6 +8,7 @@ logo:
 
 nav:
   Home: /
+  About: /about/
 
 # custom aside
 aside:
@@ -77,5 +78,15 @@ open_graph:
 highlight_theme: default # default / darker / pale night / light / ocean / mac / mac light
 
 footer:
-  since: 2020
-  custom: A clean and lightweight Hexo theme
+  since: 2025
+  custom: Just a simple blog, powered by Hexo and mengd theme.
+
+# 评论系统配置
+comments:
+  enable: true
+  type: twikoo
+  twikoo:
+    envId: https://arcmeteor-blog.netlify.app/.netlify/functions/twikoo # 替换为你的腾讯云环境ID
+    region: ap-shanghai # 可选，默认 ap-shanghai
+    path: window.location.pathname # 可选，评论关联页面路径
+    # 你可以根据主题文档添加更多自定义参数
