@@ -10,16 +10,6 @@ nav:
   Home: /
   About: /about/
 
-# custom aside
-aside:
-  # support html
-  before:
-    # - 123
-    # - 456
-  after:
-    # - 789
-    # - 0
-
 # custom improt resouces
 import:
   # reference `custom aside` config
@@ -35,6 +25,8 @@ import:
 search:
   enable: true
   path: search.json
+  field: post
+  content: true
 
 # image lazy load
 lazyload:
@@ -89,4 +81,10 @@ comments:
     envId: https://arcmeteor-blog.netlify.app/.netlify/functions/twikoo # 替换为你的腾讯云环境ID
     region: ap-shanghai # 可选，默认 ap-shanghai
     path: window.location.pathname # 可选，评论关联页面路径
-    # 你可以根据主题文档添加更多自定义参数
+
+# custom aside
+aside:
+  # support html
+  before:
+    - '<img src="/img/beside.gif" alt="雾雨魔理沙" style="width:100%;">'
+  after: []

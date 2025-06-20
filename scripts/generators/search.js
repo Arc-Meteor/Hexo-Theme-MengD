@@ -10,11 +10,14 @@ const { stripHTML } = require('hexo-util')
 hexo.extend.generator.register('generator_local_search_json', generator_local_search_json)
 
 function generator_local_search_json(locals) {
-  const { enable, path } = this.theme.config.search
+  const searchConfig = this.theme.config.search || {};
+  const enable = searchConfig.enable || false; // 安全访问
   const { root } = this.config
   const posts = locals.posts.sort('-date')
   if (!enable || !posts) return
   const data = []
+
+  const path = searchConfig.path || 'search.json';
 
   posts.each(function (post) {
     if (post.indexing === false) return
