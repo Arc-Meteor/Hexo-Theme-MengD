@@ -52,7 +52,7 @@ wordcount:
 # article
 post:
   # author avatar
-  avatar: https://www.imlete.cn/img/avatar.png
+  avatar: https://www.helloimg.com/i/2025/06/20/6854c956db28c.jpg
   # article abstract
   abstract: 200
   # The default is the `date_format` and `time_format` fields in the hexo configuration file (_config.yml)
