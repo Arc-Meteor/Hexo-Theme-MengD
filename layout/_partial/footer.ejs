@@ -18,6 +18,9 @@ const custom = theme.footer.custom || config.subtitle
     <a href="https://github.com/Lete114/hexo-theme-MengD" target="_blank">MengD</a>
   </div>
   <div><a href="https://icp.gov.moe/?keyword=20251911" target="_blank">萌ICP备20251911号</a></div>
+  <div>
+    <a href="<%- url_for('atom.xml') %>">Atom</a>
+  </div>
   <% if(custom){ %>
   <div class="custom"><%- custom %></div>
   <% } %>
