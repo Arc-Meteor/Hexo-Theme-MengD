@@ -44,7 +44,7 @@ wordcount:
 # article
 post:
   # author avatar
-  avatar: https://img.picui.cn/free/2025/06/21/685689aba058b.jpg
+  avatar: https://free.picui.cn/free/2025/06/21/685689aba058b.jpg
   # article abstract
   abstract: 200
   # The default is the `date_format` and `time_format` fields in the hexo configuration file (_config.yml)
@@ -86,5 +86,5 @@ comments:
 aside:
   # support html
   before:
-    - '<img src="https://img.picui.cn/free/2025/06/20/685568fab8bfa.gif" alt="雾雨魔理沙" style="width:100%;">'
+    - '<img src="https://free.picui.cn/free/2025/06/20/685568fab8bfa.gif" alt="雾雨魔理沙" style="width:100%;">'
   after: []
